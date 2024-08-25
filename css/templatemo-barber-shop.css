@@ -268,7 +268,7 @@ strong {
   color: var(--dark-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
+  /*text-transform: uppercase; */
   position: relative;
 }
 
