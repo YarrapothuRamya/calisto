@@ -269,6 +269,7 @@ strong {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-bold);
   /*text-transform: uppercase; */
+  text-transform: capitalize;
   position: relative;
 }
 
@@ -520,7 +521,7 @@ strong {
 
 .services-info {
   border-radius: var(--border-radius-medium);
-  border: 1px solid var(--white-color);
+  border: 1px solid #c12828; /* var(--white-color);  */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -532,7 +533,7 @@ strong {
 }
 
 .services-info h4 {
-  color: var(--white-color);
+  color:  var(--white-color);   
 }
 
 
@@ -545,7 +546,7 @@ strong {
 }
 
 .price-list-thumb-wrap {
-  padding-right: 50px;
+ /* padding-right: 50px;  */
 }
 
 .price-list-thumb {
@@ -600,14 +601,14 @@ strong {
 }
 
 .contact-block-wrap {
-  background: var(--primary-color);
+/*  background: var(--primary-color);*/
   border-radius: var(--border-radius-medium);
   padding: 0;
   min-height: 200px;
 }
 
 .contact-block {
-  background: var(--secondary-color);
+/*  background: var(--secondary-color);  */
   border-radius: var(--border-radius-medium);
   transform: rotate(8deg);
   height: 100%;
@@ -671,6 +672,24 @@ strong {
 .custom-form button[type="submit"]:focus {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
+}
+
+/*---------------------------------------
+  Section 6               
+-----------------------------------------*/
+.section_6 {
+  background-image: url('../images/calistobg-3.jpg');
+/*  background-image: url('../images/vintage-chair-barbershop.jpg');   */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.section_6 {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  padding: 65px;
 }
 
 
@@ -891,7 +910,7 @@ strong {
   display: block;
   width: 80%;
   max-width: 700px;
-  text-align: center;
+  text-align: left;
   color: #ffffff;  /*#ccc;*/
   padding: 10px 0;
   height: 150px;
@@ -938,4 +957,13 @@ strong {
   .modal-content {
     width: 100%;
   }
+}
+
+.services_row {
+  flex-shrink: 0;
+  width: 50%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-top: var(--bs-gutter-y);
 }
